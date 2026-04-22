@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reinigungsservice</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    margin: 0;
+}
+
+/* LOGO */
+.logo {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 80px;
+    z-index: 1000;
+}
+
+/* HEADER */
+header {
+    background: url("kepek/taka.jpg") center/cover no-repeat;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.8em;
+    background: rgba(0,0,0,0.5);
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+header h2 {
+    color: blue;
+}
+.container h2 {
+	color: black;
+}
+.container h2:first-of-type {
+    font-size: 20px;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.container h2:last-of-type {
+    margin-top: 10px;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+/* SERVICES */
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<img src="kepek/logo.png" class="logo">
+
+<header>
+    <h1>T&K Reinigung</h1>
+    <h2>Sauberkeit <br>~ ist unsere Mission ~</h2>
+</header>
+
+<section class="container">
+	<h2>🗺️Schüttorf und Umgebung</h2>
+    <h2>Unsere Leistungen</h2>
+
+    <div class="services">
+
+        <div class="card">
+            <img src="kepek/lakas.jpeg" alt="Wohnungsreinigung">
+            <div class="card-content">
+                <h3>Wohnungsreinigung</h3>
+                <p>Sauberkeit für Ihr Zuhause.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="kepek/iroda2.jpg" alt="Büroreinigung">
+            <div class="card-content">
+                <h3>Büroreinigung</h3>
+                <p>Perfekte Sauberkeit im Büro.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="kepek/kert.jpeg" alt="Gartenpflege">
+            <div class="card-content">
+                <h3>Gartenpflege</h3>
+                <p>Schöner und gepflegter Garten.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="container" id="kontakt">
+    <h2>Kontakt</h2>
+    <p>Email: tkreinigung1@gmail.com</p>
+    <p>Telefon: +49 176 60430098</p>
+</section>
+
+<footer>
+    <p>&copy; 2026 Reinigungsservice</p>
+</footer>
+
+</body>
+</html>
